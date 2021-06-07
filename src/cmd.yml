@@ -1,0 +1,26 @@
+name: "b2c"
+version: 0.1.0
+author: "n01e0 <reoshiseki@gmail.com>"
+about: "binary to cfg"
+
+args:
+  - binfile:
+      help: "binary file path"
+      required: true
+      takes_value: true
+  - format:
+      help: "cfg format"
+      short: f
+      long: format
+      takes_value: true
+      required: true
+      case_insensitive: true
+      possible_values:
+        - dot
+        - json
+        - gml
+  - out:
+      help: "out file name"
+      short: o
+      long: out
+      takes_value: true
